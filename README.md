@@ -1,8 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Traunship – Landing Page em Next.js
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg?style=for-the-badge)
 
-First, run the development server:
+Este projeto é uma implementação do design Traunship 🚀 | Product Landing Page – Community, originalmente criado no Figma sob a licença Creative Commons BY 4.0. A página foi desenvolvida com Next.js e Tailwind CSS.
+
+## 🎨 Créditos
+
+Este projeto é baseado no design [Traunship 🚀 | Product Landing Page – Community](https://www.figma.com/community/file/1015214062314519407), criado por [Mohammad Ali](https://www.figma.com/@maliux).
+
+O design original está licenciado sob [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+Modificações foram feitas para transformar o design em uma aplicação web utilizando Next.js.
+
+## 🚀 Tecnologias utilizadas
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+
+## ▶️ Como rodar o projeto
+
+Com o repositório clonado, instale as dependências:
+
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+# ou
+bun install
+```
+
+Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
@@ -14,23 +48,14 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) com seu navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📄 Licença
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Este projeto está licenciado sob a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
-## Learn More
+Você pode copiar, modificar, e redistribuir, inclusive para fins comerciais, desde que dê os devidos créditos ao autor original.
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Contribuindo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Sinta-se à vontade para abrir issues, propor melhorias ou enviar pull requests. Toda ajuda é bem-vinda!
