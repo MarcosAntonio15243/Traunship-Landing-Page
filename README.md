@@ -8,7 +8,7 @@ Este projeto é uma implementação do design Traunship 🚀 | Product Landing P
 
 ## 🎨 Créditos
 
-O é baseado no design [Traunship 🚀 | Product Landing Page – Community](https://www.figma.com/community/file/1015214062314519407), criado por [Mohammad Ali](https://www.figma.com/@maliux).
+O projeto é baseado no design [Traunship 🚀 | Product Landing Page – Community](https://www.figma.com/community/file/1015214062314519407), criado por [Mohammad Ali](https://www.figma.com/@maliux).
 
 O design original está licenciado sob [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
