@@ -21,6 +21,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="px-40 py-28 flex flex-col items-center gap-10">
+        <h2 className="text-6xl font-bold">Features you can's avoid</h2>
+        <p className="text-center text-[#7e7e7e]">Lacus purus eu, mauris pretium mollis ac id mauris eget. Id diam enim faucibus pellentesque mi massa. Nmet nullam sed habitasse dignissim viverra congue nisl</p>
+      </section>
     </main>
   );
 }
