@@ -1,3 +1,4 @@
+import ActionButton from "../button/ActionButton";
 
 export default function Header() {
   let navItens = ["Features", "Products", "Testemonial", "Contact"];
@@ -14,7 +15,7 @@ export default function Header() {
           })
         }
       </nav>
-      <button className="cursor-pointer text-sm bg-[var(--caramel)] px-5 py-2 rounded-full">Try a demo</button>
+      <ActionButton>Try a demo</ActionButton>
     </header>
   )
 }
