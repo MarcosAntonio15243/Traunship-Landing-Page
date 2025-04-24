@@ -1,5 +1,6 @@
 import ActionButton from "@/components/button/ActionButton";
 import FeatureCard from "@/components/cards/FeatureCard";
+import QualityCard from "@/components/cards/QualityCard";
 import Header from "@/components/layout/Header";
 
 export default function Home() {
@@ -48,6 +49,17 @@ export default function Home() {
               <p>CEO, Blackhole</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="px-40 py-28 flex flex-col items-center gap-5">
+        <h2 className="text-6xl font-bold">Affordable, good quality.</h2>
+        <p className="text-center text-[var(--gray)]">Lacus purus eu, mauris pretium mollis ac id mauris eget. Id diam enim faucibus pellentesque mi massa. Nmet nullam sed habitasse dignissim viverra congue nisl</p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 gap-10 justify-between">
+          <QualityCard icon={"mars-rover"} title={"Millions pouns of thrust"} />
+          <QualityCard icon={"mars-rover"} title={"Millions pouns of thrust"} />
+          <QualityCard icon={"mars-rover"} title={"Millions pouns of thrust"} />
+          <QualityCard icon={"mars-rover"} title={"Millions pouns of thrust"} />
         </div>
       </section>
 
