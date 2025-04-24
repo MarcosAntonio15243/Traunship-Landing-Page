@@ -35,6 +35,22 @@ export default function Home() {
         <FeatureCard icon={"lunar-lander"} title={"Ultra Rocket"} />
         </div>
       </section>
+
+      <section className="bg-[var(--biscuit)] flex flex-row items-center gap-20 text-[var(--brown)] pr-20">
+        <img src="/assets/nebula.webp" alt="Nebula" className="min-h-[80vh]" />
+        <div className="max-w-[50%] flex flex-col gap-5">
+          <h3 className="text-6xl font-semibold">“Right time to invest into space”</h3>
+          <p>Nmet nullam sed habitasse dignissim viverra congue nisl. Lacus purus eu, mauris pretium mollis ac id mauris eget.</p>
+          <div className="flex flex-row items-center gap-5">
+            <img src="https://bit.ly/dan-abramov" className="size-20 rounded-full" />
+            <div>
+              <p className="font-semibold">Milion Ask</p>
+              <p>CEO, Blackhole</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }
