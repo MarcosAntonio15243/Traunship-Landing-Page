@@ -1,5 +1,6 @@
+import { HTMLAttributes } from "react";
 
-interface SectionProps {
+interface SectionProps extends HTMLAttributes<HTMLElement> {
   className?: string;
   children: React.ReactNode;
 }
