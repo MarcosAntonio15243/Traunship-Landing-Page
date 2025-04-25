@@ -5,6 +5,8 @@ import QualityCard from "@/components/cards/QualityCard";
 import StorieCard from "@/components/cards/StorieCard";
 import Header from "@/components/layout/Header";
 import Section from "@/components/ui/Section";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { IoPlayOutline } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -15,7 +17,8 @@ export default function Home() {
         {/* Content */}
         <div className="w-full flex flex-col justify-center items-center text-center gap-6 my-20 md:my-40 text-white">
           {/* Play Button */}
-          <div className="bg-[var(--caramel)] cursor-pointer p-5 rounded-full mb-5"><img src="/assets/play.svg" alt="Vector" /></div>
+          <div className="bg-[var(--caramel)] cursor-pointer p-5 rounded-full mb-5 text-2xl"><IoPlayOutline />
+          </div>
           {/* Text Content */}
           <h2 className="text-white text-6xl font-bold text-shadow-[4px_2px_4px_rgb(0_0_0_/_0.25)]">Best place to buy rocket</h2>
           <p>Quis ipsum pellentesque nulla nulla elementum sagittis dictum</p>
@@ -106,9 +109,9 @@ export default function Home() {
           <div className="sm:col-span-2 flex flex-col gap-7">
             <h3 className="text-xl font-bold">Newsletter</h3>
             <form className="flex flex-col gap-5 bg-white/15 px-5 py-8 rounded-lg">
-              <label>When send updates in every week</label>
+              <label htmlFor="email">When send updates in every week</label>
               <span className="flex flex-row gap-5">
-                <input type="email" id="email-input" name="email" placeholder="Email Address" className="outline-none bg-white text-gray-800 px-4 py-2 rounded-sm w-full" />
+                <input type="email" id="email" name="email" placeholder="Email Address" autoComplete="off" className="outline-none bg-white text-gray-800 px-4 py-2 rounded-sm w-full" />
                 <input type="submit" value="Go" className="cursor-pointer bg-[var(--caramel)] text-white text-sm px-6 py-2 rounded-full" />
               </span>
             </form>
@@ -116,7 +119,12 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-5 sm:flex-row justify-between items-center">
           <p>© 2021 Traunship. All right reserved.</p>
-          <img src="/assets/socialMediaIcons.webp" alt="Social Media Icons" />
+          <div className="flex flex-row gap-5">
+            <FaFacebookF className="cursor-pointer" />
+            <FaTwitter className="cursor-pointer" />
+            <FaInstagram className="cursor-pointer" />
+            <FaLinkedinIn className="cursor-pointer" />
+          </div>
         </div>
       </footer>
     </main>
