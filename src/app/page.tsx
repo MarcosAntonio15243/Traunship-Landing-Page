@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section className="flex flex-col items-center gap-10 text-center">
+      <Section id="features" className="flex flex-col items-center gap-10 text-center">
         <h2 className="text-6xl font-bold">Features you can's avoid</h2>
         <p className="text-center text-[var(--gray)]">Lacus purus eu, mauris pretium mollis ac id mauris eget. Id diam enim faucibus pellentesque mi massa. Nmet nullam sed habitasse dignissim viverra congue nisl</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-24 mt-16 mb-10">
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <section className="bg-[var(--biscuit)] md:grid md:grid-cols-3 lg:grid-cols-2 justify-between text-[var(--brown)]">
+      <section id="testemonial" className="bg-[var(--biscuit)] md:grid md:grid-cols-3 lg:grid-cols-2 justify-between text-[var(--brown)]">
         <div className="hidden md:block bg-[url('/assets/nebula.webp')] bg-no-repeat bg-cover bg-right"></div>
         <div className="flex flex-col gap-5 p-10 md:py-30 md:px-20 md:col-span-2 lg:col-span-1">
           <h3 className="text-6xl font-semibold">“Right time to invest into space”</h3>
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Section className="flex flex-col items-center gap-5">
+      <Section id="products" className="flex flex-col items-center gap-5">
         <h2 className="text-6xl font-bold text-center">Affordable, good quality.</h2>
         <p className="text-center text-[var(--gray)]">Lacus purus eu, mauris pretium mollis ac id mauris eget. Id diam enim faucibus pellentesque mi massa. Nmet nullam sed habitasse dignissim viverra congue nisl</p>
         <div className="grid grid-cols-1 xl:grid-cols-2 mt-10 gap-5 lg:gap-10 justify-between">
@@ -78,12 +78,47 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 pt-10 pb-36 lg:px-40 lg:pt-20 flex flex-wrap justify-center gap-15 bg-[var(--dark)] bg-[url('/assets/shapeRoundedBottom.webp')] bg-bottom bg-cover bg-no-repeat">
+      <section id="contact" className="px-5 pt-10 pb-36 lg:px-40 lg:pt-20 flex flex-wrap justify-center gap-15 bg-[var(--dark)] bg-[url('/assets/shapeRoundedBottom.webp')] bg-bottom bg-cover bg-no-repeat mt-[-2px]">
         <PeopleTeamCard icon={"https://bit.ly/dan-abramov"} description={"I brought a rocket for my son in his 14th birthday. I liked their service. Love it."} name={"Wade Warren"} profession={"Astronaut"} />
         <PeopleTeamCard icon={"https://i.pravatar.cc/400?u=1"} description={"They delivered my custom rocket as fast as the rocket itself. Mindblowing."} name={"Esther Howard"} profession={"Apollo 11 Pilot"} />
         <PeopleTeamCard icon={"https://cdn.myanimelist.net/r/84x124/images/characters/9/131317.webp?s=d4b03c7291407bde303bc0758047f6bd"} description={"II found awesome customer service from them. They fixed my rocket within a day."} name={"Cameron Williamson"} profession={"NASA Manager"} />
       </section>
 
+      <footer className="px-5 py-10 lg:px-40 lg:pt-20 bg-[var(--dark)] text-[var(--white)] mt-[-1px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mb-10 pb-10 border-b-[0.5px] border-b-white/50 gap-10 sm:gap-5">
+          <div className="flex flex-col gap-5">
+            <h3 className="text-3xl font-bold">Traunship</h3>
+            <div className="text-sm flex flex-col gap-3">
+              <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+              <p>(684) 555-0102</p>
+              <p>(603) 555-0123</p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-7">
+            <h3 className="text-xl font-bold">Quick Links</h3>
+            <div className="text-sm flex flex-col gap-3 font-bold">
+              <a href="#features" className="hover:underline hover:text-[var(--caramel)]">Features</a>
+              <a href="#products" className="hover:underline hover:text-[var(--caramel)]">Products</a>
+              <a href="#testemonial" className="hover:underline hover:text-[var(--caramel)]">Testemonial</a>
+              <a href="#contact" className="hover:underline hover:text-[var(--caramel)]">Contact</a>
+            </div>
+          </div>
+          <div className="sm:col-span-2 flex flex-col gap-7">
+            <h3 className="text-xl font-bold">Newsletter</h3>
+            <form className="flex flex-col gap-5 bg-white/15 px-5 py-8 rounded-lg">
+              <label>When send updates in every week</label>
+              <span className="flex flex-row gap-5">
+                <input type="email" id="email-input" name="email" placeholder="Email Address" className="outline-none bg-white text-gray-800 px-4 py-2 rounded-sm w-full" />
+                <input type="submit" value="Go" className="cursor-pointer bg-[var(--caramel)] text-white text-sm px-6 py-2 rounded-full" />
+              </span>
+            </form>
+          </div>
+        </div>
+        <div className="flex flex-col gap-5 sm:flex-row justify-between items-center">
+          <p>© 2021 Traunship. All right reserved.</p>
+          <img src="/assets/socialMediaIcons.webp" alt="Social Media Icons" />
+        </div>
+      </footer>
     </main>
   );
 }

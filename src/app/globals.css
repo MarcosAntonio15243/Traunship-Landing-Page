@@ -9,6 +9,10 @@
   --gray: #7e7e7e;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
