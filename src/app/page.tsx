@@ -1,5 +1,6 @@
 import ActionButton from "@/components/button/ActionButton";
 import FeatureCard from "@/components/cards/FeatureCard";
+import PeopleTeamCard from "@/components/cards/PeopleTeamCard";
 import QualityCard from "@/components/cards/QualityCard";
 import StorieCard from "@/components/cards/StorieCard";
 import Header from "@/components/layout/Header";
@@ -75,7 +76,12 @@ export default function Home() {
           <StorieCard icon={"background"} title={"“Rocket lab boots its space system”"} />
           <StorieCard icon={"background"} title={"“NASA’s big rocket misses deadline”"} />
         </div>
-        
+      </section>
+
+      <section className="px-5 pt-10 pb-36 lg:px-40 lg:pt-20 flex flex-wrap justify-center gap-15 bg-[var(--dark)] bg-[url('/assets/shapeRoundedBottom.webp')] bg-bottom bg-cover bg-no-repeat">
+        <PeopleTeamCard icon={"https://bit.ly/dan-abramov"} description={"I brought a rocket for my son in his 14th birthday. I liked their service. Love it."} name={"Wade Warren"} profession={"Astronaut"} />
+        <PeopleTeamCard icon={"https://i.pravatar.cc/400?u=1"} description={"They delivered my custom rocket as fast as the rocket itself. Mindblowing."} name={"Esther Howard"} profession={"Apollo 11 Pilot"} />
+        <PeopleTeamCard icon={"https://cdn.myanimelist.net/r/84x124/images/characters/9/131317.webp?s=d4b03c7291407bde303bc0758047f6bd"} description={"II found awesome customer service from them. They fixed my rocket within a day."} name={"Cameron Williamson"} profession={"NASA Manager"} />
       </section>
 
     </main>
