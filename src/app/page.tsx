@@ -9,6 +9,33 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/f
 import { IoPlayOutline } from "react-icons/io5";
 
 export default function Home() {
+  let features = [
+    {
+      icon: "/assets/featureIcons/stage-separation.svg",
+      title: "Solid Fuel"
+    },
+    {
+      icon: "/assets/featureIcons/soyuz-space-craft.svg",
+      title: "Liquid Fuel"
+    },
+    {
+      icon: "/assets/featureIcons/starship.svg",
+      title: "Ion Rocket"
+    },
+    {
+      icon: "/assets/featureIcons/ufo.svg",
+      title: "Plasma Rocket"
+    },
+    {
+      icon: "/assets/featureIcons/command-module.svg",
+      title: "Supersonic Rocket"
+    },
+    {
+      icon: "/assets/featureIcons/lunar-lander.svg",
+      title: "Ultra Rocket"
+    },
+  ];
+
   return (
     <main className="">
       {/* Main Section */}
@@ -34,12 +61,17 @@ export default function Home() {
         <h2 className="text-6xl font-bold">Features you can's avoid</h2>
         <p className="text-center text-[var(--gray)]">Lacus purus eu, mauris pretium mollis ac id mauris eget. Id diam enim faucibus pellentesque mi massa. Nmet nullam sed habitasse dignissim viverra congue nisl</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-24 mt-16 mb-10">
-        <FeatureCard icon={"stage-separation"} title={"Solid Fuel"} />
+        {features.map((e, index) => {
+          return (
+            <FeatureCard key={index} icon={e.icon} title={e.title} />
+          )
+        })}
+        {/* <FeatureCard icon={"stage-separation"} title={"Solid Fuel"} />
         <FeatureCard icon={"soyuz-space-craft"} title={"Liquid Fuel"} />
         <FeatureCard icon={"starship"} title={"Ion Rocket"} />
         <FeatureCard icon={"ufo"} title={"Plasma Rocket"} />
         <FeatureCard icon={"command-module"} title={"Supersonic Rocket"} />
-        <FeatureCard icon={"lunar-lander"} title={"Ultra Rocket"} />
+        <FeatureCard icon={"lunar-lander"} title={"Ultra Rocket"} /> */}
         </div>
       </Section>
 
