@@ -1,10 +1,11 @@
 
 interface ActionButtonProps {
   type?: "primary" | "secondary";
+  styles?: string;
   children: React.ReactNode;
 }
 
-export default function ActionButton({ type="primary", children, ...props }: ActionButtonProps) {
+export default function ActionButton({ type="primary", styles="", children, ...props }: ActionButtonProps) {
   const baseStyles = "cursor-pointer text-sm px-5 py-2 rounded-full";
   const variants = {
     primary: "bg-[var(--caramel)]",
@@ -12,7 +13,7 @@ export default function ActionButton({ type="primary", children, ...props }: Act
   };
   
   return (
-    <button className={`${baseStyles} ${variants[type]}`} {...props}>
+    <button className={`${baseStyles} ${styles} ${variants[type]}`} {...props}>
       {children}
     </button>
   )
