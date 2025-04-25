@@ -4,25 +4,25 @@ interface NavBarProps extends HTMLAttributes<HTMLElement> {
   styles?: string;
 }
 
-export default function NavBar({ styles="", ...props }: NavBarProps) {
+export default function NavBar({ styles = "", ...props }: NavBarProps) {
   let navItens = [
     {
       value: "Feature",
-      link: "#features"
+      link: "#features",
     },
     {
       value: "Products",
-      link: "#products"
+      link: "#products",
     },
     {
       value: "Testemonial",
-      link: "#testemonial"
+      link: "#testemonial",
     },
     {
       value: "Contact",
-      link: "#contact"
-    }
-  ]
+      link: "#contact",
+    },
+  ];
 
   return (
     <nav className={`flex text-sm ${styles}`} {...props}>

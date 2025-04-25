@@ -3,8 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Traunship Landing Page",
-  description: "Uma landing page informativa sobre foguetes"
-}
+  description: "Uma landing page informativa sobre foguetes",
+};
 
 export default function RootLayout({
   children,
@@ -13,11 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`antialiased`}>{children}</body>
     </html>
   );
 }
