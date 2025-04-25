@@ -1,21 +1,18 @@
 import ActionButton from "../button/ActionButton";
+import HeaderButton from "../button/HeaderButton";
+import NavBar from "./NavBar";
 
 export default function Header() {
-  let navItens = ["Features", "Products", "Testemonial", "Contact"];
 
   return (
     <header className="w-full flex flex-row justify-between items-center text-[var(--white)]">
       <h1 className="font-bold cursor-pointer text-2xl">Traunship</h1>
-      <nav className={`flex flex-row gap-10 text-sm`}>
-        {
-          navItens.map((e, index) => {
-            return (
-              <a key={index} href="#" className="hover:underline">{e}</a>
-            )
-          })
-        }
-      </nav>
-      <ActionButton>Try a demo</ActionButton>
+      <NavBar styles="hidden gap-10 md:flex"/>
+      <ActionButton styles="hidden flex-row md:block">Try a demo</ActionButton>
+      <div className="md:hidden relative">
+        <HeaderButton />
+      </div>
+      
     </header>
   )
 }
