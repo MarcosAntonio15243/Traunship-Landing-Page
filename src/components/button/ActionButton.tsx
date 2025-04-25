@@ -6,7 +6,7 @@ interface ActionButtonProps {
 }
 
 export default function ActionButton({ type="primary", styles="", children, ...props }: ActionButtonProps) {
-  const baseStyles = "cursor-pointer text-sm px-5 py-2 rounded-full";
+  const baseStyles = "cursor-pointer text-white text-sm px-5 py-3 rounded-full";
   const variants = {
     primary: "bg-[var(--caramel)]",
     secondary: "border-1",

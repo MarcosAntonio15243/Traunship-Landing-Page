@@ -1,6 +1,7 @@
 import ActionButton from "@/components/button/ActionButton";
 import FeatureCard from "@/components/cards/FeatureCard";
 import QualityCard from "@/components/cards/QualityCard";
+import StorieCard from "@/components/cards/StorieCard";
 import Header from "@/components/layout/Header";
 import Section from "@/components/ui/Section";
 
@@ -57,12 +58,25 @@ export default function Home() {
         <h2 className="text-6xl font-bold text-center">Affordable, good quality.</h2>
         <p className="text-center text-[var(--gray)]">Lacus purus eu, mauris pretium mollis ac id mauris eget. Id diam enim faucibus pellentesque mi massa. Nmet nullam sed habitasse dignissim viverra congue nisl</p>
         <div className="grid grid-cols-1 xl:grid-cols-2 mt-10 gap-5 lg:gap-10 justify-between">
-          <QualityCard icon={"mars-rover"} title={"Millions pouns of thrust"} />
-          <QualityCard icon={"mars-rover"} title={"Millions pouns of thrust"} />
-          <QualityCard icon={"mars-rover"} title={"Millions pouns of thrust"} />
-          <QualityCard icon={"mars-rover"} title={"Millions pouns of thrust"} />
+          <QualityCard icon={"marsRover"} title={"Millions pouns of thrust"} />
+          <QualityCard icon={"marsRover"} title={"Millions pouns of thrust"} />
+          <QualityCard icon={"marsRover"} title={"Millions pouns of thrust"} />
+          <QualityCard icon={"marsRover"} title={"Millions pouns of thrust"} />
         </div>
       </Section>
+
+      <section className="px-5 py-10 lg:px-30 lg:py-20 bg-[#F7F9FC] flex flex-col lg:flex-row gap-10">
+        <div className="flex flex-col gap-5 lg:gap-10 items-center lg:items-baseline">
+          <h2 className="text-6xl sm:text-5xl font-bold mt-10 text-center lg:text-left">Don’t miss Rocket Science blog</h2>
+          <p className="text-[var(--gray)] text-center lg:text-left">Nmet nullam sed habitasse dignissim viverra congue nisl. Lacus purus eu, mauris pretium mollis ac id mauris eget.</p>
+          <ActionButton>All stories</ActionButton>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-10 max-sm:items-center sm:justify-center w-full">
+          <StorieCard icon={"background"} title={"“Rocket lab boots its space system”"} />
+          <StorieCard icon={"background"} title={"“NASA’s big rocket misses deadline”"} />
+        </div>
+        
+      </section>
 
     </main>
   );
