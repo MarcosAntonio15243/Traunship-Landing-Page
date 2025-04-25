@@ -9,7 +9,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/f
 import { IoPlayOutline } from "react-icons/io5";
 
 export default function Home() {
-  let features = [
+  const features = [
     {
       icon: "/assets/featureIcons/stage-separation.svg",
       title: "Solid Fuel"
@@ -33,6 +33,25 @@ export default function Home() {
     {
       icon: "/assets/featureIcons/lunar-lander.svg",
       title: "Ultra Rocket"
+    },
+  ];
+
+  const products = [
+    {
+      icon: "/assets/marsRover.webp",
+      title: "Millions pouns of thrust"
+    },
+    {
+      icon: "/assets/marsRover.webp",
+      title: "More than 1,300 missions"
+    },
+    {
+      icon: "/assets/marsRover.webp",
+      title: "Atlas launched Friendship"
+    },
+    {
+      icon: "/assets/marsRover.webp",
+      title: "Separate Spacecraft"
     },
   ];
 
@@ -66,12 +85,6 @@ export default function Home() {
             <FeatureCard key={index} icon={e.icon} title={e.title} />
           )
         })}
-        {/* <FeatureCard icon={"stage-separation"} title={"Solid Fuel"} />
-        <FeatureCard icon={"soyuz-space-craft"} title={"Liquid Fuel"} />
-        <FeatureCard icon={"starship"} title={"Ion Rocket"} />
-        <FeatureCard icon={"ufo"} title={"Plasma Rocket"} />
-        <FeatureCard icon={"command-module"} title={"Supersonic Rocket"} />
-        <FeatureCard icon={"lunar-lander"} title={"Ultra Rocket"} /> */}
         </div>
       </Section>
 
@@ -94,10 +107,11 @@ export default function Home() {
         <h2 className="text-6xl font-bold text-center">Affordable, good quality.</h2>
         <p className="text-center text-[var(--gray)]">Lacus purus eu, mauris pretium mollis ac id mauris eget. Id diam enim faucibus pellentesque mi massa. Nmet nullam sed habitasse dignissim viverra congue nisl</p>
         <div className="grid grid-cols-1 xl:grid-cols-2 mt-10 gap-5 lg:gap-10 justify-between">
-          <QualityCard icon={"marsRover"} title={"Millions pouns of thrust"} />
-          <QualityCard icon={"marsRover"} title={"Millions pouns of thrust"} />
-          <QualityCard icon={"marsRover"} title={"Millions pouns of thrust"} />
-          <QualityCard icon={"marsRover"} title={"Millions pouns of thrust"} />
+          {products.map((e, index) => {
+            return (
+              <QualityCard key={index} icon={e.icon} title={e.title} />
+            )
+          })}
         </div>
       </Section>
 
