@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <main className="">
       {/* Main Section */}
-      <Section className="relative min-h-[110vh] bg-[url('/assets/background.webp')] bg-bottom bg-cover bg-no-repeat">
+      <Section className="relative  bg-[url('/assets/background.webp')] bg-bottom bg-cover bg-no-repeat">
         <Header />
         {/* Content */}
-        <div className="w-full flex flex-col justify-center items-center text-center gap-6 mt-32 text-white">
+        <div className="w-full flex flex-col justify-center items-center text-center gap-6 my-20 md:my-40 text-white">
           {/* Play Button */}
           <div className="bg-[var(--caramel)] cursor-pointer p-5 rounded-full mb-5"><img src="/assets/play.svg" alt="Vector" /></div>
           {/* Text Content */}
@@ -40,7 +40,7 @@ export default function Home() {
 
       <section className="bg-[var(--biscuit)] md:grid md:grid-cols-3 lg:grid-cols-2 justify-between text-[var(--brown)]">
         <div className="hidden md:block bg-[url('/assets/nebula.webp')] bg-no-repeat bg-cover bg-right"></div>
-        <div className="flex flex-col gap-5 py-30 px-20 md:col-span-2 lg:col-span-1">
+        <div className="flex flex-col gap-5 p-10 md:py-30 md:px-20 md:col-span-2 lg:col-span-1">
           <h3 className="text-6xl font-semibold">“Right time to invest into space”</h3>
           <p>Nmet nullam sed habitasse dignissim viverra congue nisl. Lacus purus eu, mauris pretium mollis ac id mauris eget.</p>
           <div className="flex flex-row items-center gap-5">
@@ -53,16 +53,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-40 py-28 flex flex-col items-center gap-5">
-        <h2 className="text-6xl font-bold">Affordable, good quality.</h2>
+      <Section className="flex flex-col items-center gap-5">
+        <h2 className="text-6xl font-bold text-center">Affordable, good quality.</h2>
         <p className="text-center text-[var(--gray)]">Lacus purus eu, mauris pretium mollis ac id mauris eget. Id diam enim faucibus pellentesque mi massa. Nmet nullam sed habitasse dignissim viverra congue nisl</p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 gap-10 justify-between">
+        <div className="grid grid-cols-1 xl:grid-cols-2 mt-10 gap-5 lg:gap-10 justify-between">
           <QualityCard icon={"mars-rover"} title={"Millions pouns of thrust"} />
           <QualityCard icon={"mars-rover"} title={"Millions pouns of thrust"} />
           <QualityCard icon={"mars-rover"} title={"Millions pouns of thrust"} />
           <QualityCard icon={"mars-rover"} title={"Millions pouns of thrust"} />
         </div>
-      </section>
+      </Section>
 
     </main>
   );
