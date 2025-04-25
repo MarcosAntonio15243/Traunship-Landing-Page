@@ -3,6 +3,7 @@
 ![Next.js](https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg?style=for-the-badge)
+![React Icons](https://img.shields.io/badge/React%20Icons-%23E91E63?style=for-the-badge&logo=react&logoColor=white)
 
 Este projeto é uma implementação do design Traunship 🚀 | Product Landing Page – Community, originalmente criado no Figma sob a licença Creative Commons BY 4.0. A página foi desenvolvida com Next.js e Tailwind CSS.
 
@@ -20,6 +21,7 @@ Modificações foram feitas para transformar o design em uma aplicação web uti
 - [React](https://react.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
 
 ## ▶️ Como rodar o projeto
