@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="">
       {/* Main Section */}
-      <Section styles="relative min-h-[110vh] bg-[url('/assets/background.webp')] bg-bottom bg-cover">
+      <Section styles="relative min-h-[110vh] bg-[url('/assets/background.webp')] bg-bottom bg-cover bg-no-repeat">
         <Header />
         {/* Content */}
         <div className="w-full flex flex-col justify-center items-center text-center gap-6 mt-32 text-white">
@@ -25,7 +25,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <section className="px-40 py-28 flex flex-col items-center gap-10 text-center">
+      <Section styles="px-40 py-28 flex flex-col items-center gap-10 text-center">
         <h2 className="text-6xl font-bold">Features you can's avoid</h2>
         <p className="text-center text-[var(--gray)]">Lacus purus eu, mauris pretium mollis ac id mauris eget. Id diam enim faucibus pellentesque mi massa. Nmet nullam sed habitasse dignissim viverra congue nisl</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 mt-16 mb-10">
@@ -36,7 +36,7 @@ export default function Home() {
         <FeatureCard icon={"command-module"} title={"Supersonic Rocket"} />
         <FeatureCard icon={"lunar-lander"} title={"Ultra Rocket"} />
         </div>
-      </section>
+      </Section>
 
       <section className="bg-[var(--biscuit)] flex flex-row items-center gap-20 text-[var(--brown)] pr-20">
         <img src="/assets/nebula.webp" alt="Nebula" className="min-h-[80vh]" />
