@@ -2,12 +2,14 @@ import ActionButton from "@/components/button/ActionButton";
 import FeatureCard from "@/components/cards/FeatureCard";
 import QualityCard from "@/components/cards/QualityCard";
 import Header from "@/components/layout/Header";
+import Section from "@/components/ui/Section";
 
 export default function Home() {
   return (
     <main className="">
       {/* Main Section */}
-      <section className="relative px-40 py-10 min-h-[110vh] bg-[url('/assets/background.webp')] bg-bottom bg-cover">
+      {/* <section className="relative px-40 py-10 min-h-[110vh] bg-[url('/assets/background.webp')] bg-bottom bg-cover"> */}
+      <Section styles="relative min-h-[110vh] bg-[url('/assets/background.webp')] bg-bottom bg-cover">
         <Header />
         {/* Content */}
         <div className="w-full flex flex-col justify-center items-center gap-6 mt-32 text-white">
@@ -22,7 +24,8 @@ export default function Home() {
             <ActionButton type="secondary">Buy now</ActionButton>
           </div>
         </div>
-      </section>
+      </Section>
+      {/* </section> */}
 
       <section className="px-40 py-28 flex flex-col items-center gap-10 text-center">
         <h2 className="text-6xl font-bold">Features you can's avoid</h2>
