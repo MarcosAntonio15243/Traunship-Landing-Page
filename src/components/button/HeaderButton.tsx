@@ -26,7 +26,7 @@ export default function HeaderButton() {
         </svg>
       </button>
       <div className={`absolute ${display} flex-col z-10 right-3 bg-[var(--biscuit)] p-5 gap-5 rounded-2xl rounded-tr-none`}>
-        <NavBar styles="flex-col text-[var(--brown)] gap-5 items-center" />
+        <NavBar onClick={() => setDisplay("hidden")} styles="flex-col text-[var(--brown)] gap-5 items-center" />
         <ActionButton styles="flex-row md:block text-nowrap">
           Try a demo
         </ActionButton>
