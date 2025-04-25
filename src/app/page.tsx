@@ -84,6 +84,32 @@ export default function Home() {
         <PeopleTeamCard icon={"https://cdn.myanimelist.net/r/84x124/images/characters/9/131317.webp?s=d4b03c7291407bde303bc0758047f6bd"} description={"II found awesome customer service from them. They fixed my rocket within a day."} name={"Cameron Williamson"} profession={"NASA Manager"} />
       </section>
 
+      <Section>
+        <div>
+          <h3>Traunship</h3>
+          <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+          <p>(684) 555-0102</p>
+          <p>(603) 555-0123</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <a href="#">Features</a>
+          <a href="#">Products</a>
+          <a href="#">Testemonial</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <form>
+            <label>When send updates in every week</label>
+            <span>
+              <input type="email" placeholder="Email Address" />
+              <input type="submit" value="Go" />
+            </span>
+          </form>
+        </div>
+      </Section>
+
     </main>
   );
 }
