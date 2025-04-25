@@ -55,6 +55,27 @@ export default function Home() {
     },
   ];
 
+  const peopleTeam = [
+    {
+      icon: "https://bit.ly/dan-abramov",
+      description: "I brought a rocket for my son in his 14th birthday. I liked their service. Love it.",
+      name: "Wade Warren",
+      profession: "Astronaut"
+    },
+    {
+      icon: "https://i.pravatar.cc/400?u=1",
+      description: "They delivered my custom rocket as fast as the rocket itself. Mindblowing.",
+      name: "Esther Howard",
+      profession: "Apollo 11 Pilot"
+    },
+    {
+      icon: "https://cdn.myanimelist.net/r/84x124/images/characters/9/131317.webp?s=d4b03c7291407bde303bc0758047f6bd",
+      description: "II found awesome customer service from them. They fixed my rocket within a day.",
+      name: "Cameron Williamson",
+      profession: "NASA Manager"
+    }
+  ];
+
   return (
     <main className="">
       {/* Main Section */}
@@ -128,9 +149,11 @@ export default function Home() {
       </section>
 
       <section id="contact" className="px-5 pt-10 pb-36 lg:px-40 lg:pt-20 flex flex-wrap justify-center gap-15 bg-[var(--dark)] bg-[url('/assets/shapeRoundedBottom.webp')] bg-bottom bg-cover bg-no-repeat mt-[-2px]">
-        <PeopleTeamCard icon={"https://bit.ly/dan-abramov"} description={"I brought a rocket for my son in his 14th birthday. I liked their service. Love it."} name={"Wade Warren"} profession={"Astronaut"} />
-        <PeopleTeamCard icon={"https://i.pravatar.cc/400?u=1"} description={"They delivered my custom rocket as fast as the rocket itself. Mindblowing."} name={"Esther Howard"} profession={"Apollo 11 Pilot"} />
-        <PeopleTeamCard icon={"https://cdn.myanimelist.net/r/84x124/images/characters/9/131317.webp?s=d4b03c7291407bde303bc0758047f6bd"} description={"II found awesome customer service from them. They fixed my rocket within a day."} name={"Cameron Williamson"} profession={"NASA Manager"} />
+        {peopleTeam.map((e, index) => {
+          return (
+            <PeopleTeamCard key={index} icon={e.icon} description={e.description} name={e.name} profession={e.profession} />
+          )
+        })}
       </section>
 
       <footer className="px-5 py-10 lg:px-40 lg:pt-20 bg-[var(--dark)] text-[var(--white)] mt-[-1px]">
