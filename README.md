@@ -61,3 +61,7 @@ Você pode copiar, modificar, e redistribuir, inclusive para fins comerciais, de
 ## 🤝 Contribuindo
 
 Sinta-se à vontade para abrir issues, propor melhorias ou enviar pull requests. Toda ajuda é bem-vinda!
+
+## 🖼️ Prévia da Landing Page
+
+![](/assets/preview.webp)
