@@ -136,6 +136,7 @@ export default function Home() {
           <div className="flex flex-row items-center gap-5">
             <img
               src="https://bit.ly/dan-abramov"
+              alt="Milion Ask image"
               className="size-20 rounded-full"
             />
             <div>
