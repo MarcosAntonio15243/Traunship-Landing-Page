@@ -11,7 +11,7 @@ export default function FeatureCard({
 }: FeatureCardProps) {
   return (
     <div className="flex flex-col gap-5 max-w-xs items-center text-center">
-      <img src={icon} alt={`${icon}`} />
+      <img src={icon} alt={`${icon}`} className="w-12 h-12" />
       <h3 className="font-semibold text-2xl text-[var(--caramel)]">{title}</h3>
       <p className="text-[var(--gray)]">
         {content ||
