@@ -18,7 +18,7 @@ export default function QualityCard({
           {content ||
             "Eget mattis viverra in lorem dictum consequat etiam non pellentesque mauris diamprice ore"}
         </p>
-        <a className="text-[var(--caramel)] cursor-pointer hover:underline">
+        <a href="#" className="text-[var(--caramel)] cursor-pointer hover:underline">
           Learn more
         </a>
       </div>
